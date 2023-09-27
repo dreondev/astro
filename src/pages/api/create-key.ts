@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { PrismaClient } from "@prisma/client"; // biblioteca para usar o prisma
-import { v4 as uuidv4 } from "uuid"; // biblioteca pra gerar chave
+import { uuid } from 'uuidv4'; // biblioteca pra gerar chave
 import requestIp from "request-ip";
 import axios from "axios";
 
@@ -57,7 +57,7 @@ export default async function handler(
 
   // usa um bloco try pra usar o catch caso dê erro
   try {
-    const key = uuidv4();
+    const key = uuid();
 
     await prisma.key.create({
       data: {
