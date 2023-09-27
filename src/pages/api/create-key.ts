@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { PrismaClient } from "@prisma/client"; // biblioteca para usar o prisma
-import { v4 as uuidv4 } from "uuidv4"; // biblioteca pra gerar chave
+import { v4 as uuidv4 } from "uuid"; // biblioteca pra gerar chave
 import requestIp from "request-ip";
 import axios from "axios";
 
