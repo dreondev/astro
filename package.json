@@ -24,6 +24,7 @@
     "uuidv4": "^6.2.13"
   },
   "devDependencies": {
+    "@types/cookie": "^0.5.2",
     "@types/jsonwebtoken": "^9.0.3",
     "@types/node": "latest",
     "@types/react": "latest",
